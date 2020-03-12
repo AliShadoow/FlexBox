@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.col-1{
+    width: 20%;
+}
+.col-2{
+    width: 40%;
+}
+.col-3{
+    width: 60%;
+}
+.col-4{
+    width: 80%;
+}
+.col-5{
+    width: 100%;
+}
+/* Main */
+#main{
+    display: flex;
+    flex: 1 1 auto;
+    text-align: center;
+}
+.box-1{
+    background-image: linear-gradient(-60deg, rgba(35,79,116,1) ,rgba(35,79,116,1) 30%, rgba(35,79,116,0.9) 30%, rgba(35,79,116,0.9) 70%,rgba(35,79,116,1) 0);
+}
+.box-2{
+    background-color: #6DC5C6;
+}
+.box-3{
+    background-image: linear-gradient(-60deg, rgba(139,74,127,1) ,rgba(139,74,127,1) 20%, rgba(139,74,127,0.9) 20%, rgba(139,74,127,0.9) 80%,rgba(139,74,127,1) 0);
+}
+.box-4{
+    background-image: linear-gradient(-60deg, rgba(248,188,68,1) ,rgba(248,188,68,1) 30%, rgba(248,188,68,0.9) 30%, rgba(248,188,68,0.9) 70%,rgba(248,188,68,1) 0);
+}
+.box-5{
+    background-image: linear-gradient(-60deg, rgba(241,76,75,1) ,rgba(241,76,75,1) 30%, rgba(241,76,75,0.9) 30%, rgba(241,76,75,0.9) 70%,rgba(241,76,75,1) 0);
+}
+.box{
+    height: 100vh;
+    display: flex;
+    font: 1.8em "Aller Light";
+    color: #fff;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+}
+/* Media Query */
+@media (max-width: 768px){
+    .col-sm-1{
+        width: 20%;
+    }
+    .col-sm-2{
+        width: 40%;
+    }
+    .col-sm-3{
+        width: 60%;
+    }
+    .col-sm-4{
+        width: 80%;
+    }
+    .col-sm-5{
+        width: 100%;
+    }
+    /* Main */
+    #main{
+        flex-direction: column;
+    }
+    .box{
+        height: 20vh;
+        font-size: 16px;
+    }
+    .box-1{
+        background-color: rgba(35,79,116,1);
+    }
+    .box-3{
+        background-image: linear-gradient(-60deg, rgba(139,74,127,1) ,rgba(139,74,127,1) 10%, rgba(139,74,127,0.9) 10%, rgba(139,74,127,0.9) 90%,rgba(139,74,127,1) 0);
+    }   
+    .box-4{
+        background-image: linear-gradient(-60deg, rgba(248,188,68,1) ,rgba(248,188,68,1) 10%, rgba(248,188,68,0.9) 10%, rgba(248,188,68,0.9) 90%,rgba(248,188,68,1) 0);
+    }
+    .box-5{
+    background-image: linear-gradient(-60deg, rgba(241,76,75,1) ,rgba(241,76,75,1) 10%, rgba(241,76,75,0.9) 10%, rgba(241,76,75,0.9) 90%,rgba(241,76,75,1) 0);
+    }
+}

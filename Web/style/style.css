@@ -78,9 +78,16 @@ body{
 .submit:hover{
     filter: brightness(90%);
 }
+.subtitle{
+    color: var(--color-gray);
+    margin: 10px 0;
+}
 /* Header */
 header{
     font-size: 15px;
+}
+header .header_top .container{
+    display: flex;
 }
 /* Header_top */
 .header_top{
@@ -111,7 +118,6 @@ header{
 }
     /* Header_top_left */
 .header_top_left{
-    float: left;
     text-align: left;
     display: flex;
     flex-direction: row-reverse;
@@ -577,6 +583,87 @@ main .main_bottom figure figcaption{
     color: var(--color-white);
     margin-right: 10px;
 }
+/* portfolio3 */
+.portfolio3_slider_item img{
+    height: 180px;
+    object-fit: cover;
+}
+/* About */
+#about{
+    margin: 30px 0;
+    display: flex;
+}
+#about .container{
+    display: flex;
+}
+.blog{
+    padding: 20px;
+    background-color: var(--color-white);
+    display: inline-block;
+    border: 1px solid var(--color-lightgray);
+    margin-left: 40px;
+}
+.blog_header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-lightgray);
+    margin-bottom: 20px;
+    align-items: center;
+    color: var(--color-purple);
+}
+.blog_header_right{
+    display: flex;
+    align-items: center;;
+}
+.blog_header_right h3{
+    margin: 0 10px;
+}
+.blog_header_left{
+    text-align: left;
+}
+.blog_header_left .link{
+    color: var(--color-purple);
+    font-size: 12px;
+    padding: 0 10px;
+}
+.blog_header_left .link:hover{
+    color: var(--color-lightorange);
+}
+.blog_footer ul li{
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+.blog_footer ul li:hover{
+    background-color: var(--color-lightgray);
+}
+.blog_footer ul li .footer_title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.blog_footer ul li .footer_title a{
+    text-decoration: none;
+    color: var(--color-gray);
+    font-weight: 100;
+    transition: 0.3s;
+}
+.blog_footer ul li .footer_title a:hover{
+    color: var(--color-darkgary);
+}
+
+.blog_footer ul li .footer_date span,.blog_footer ul li .footer_view span{
+    font-size: 14px;
+    color: var(--color-gray);
+    font-weight: 100;
+}
+.blog_footer ul li .footer_view{
+    text-align: left;
+}
+
 
 
 
